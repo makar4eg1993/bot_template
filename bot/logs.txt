@@ -1,0 +1,1061 @@
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:32] in chat [private:548455968]
+INFO:root:<bound method Message.answer of <Message {"message_id": 32, "from": {"id": 548455968, "is_bot": false, "first_name": "Sergey", "last_name": "Makarov", "username": "makar4eg", "language_code": "ru"}, "chat": {"id": 548455968, "first_name": "Sergey", "last_name": "Makarov", "username": "makar4eg", "type": "private"}, "date": 1670240937, "text": "/start", "entities": [{"type": "bot_command", "offset": 0, "length": 6}]}>>нажали старт
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224820]: [failed] (in 1 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=NameError("name 'db' is not defined")>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 42, in cmd_start
+    if db.checkRegistration(message.from_user.id) == 1:
+NameError: name 'db' is not defined
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:33] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224821]: [success] (in 11 ms)
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:34] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224822]: [success] (in 185 ms)
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:36] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224823]: [success] (in 195 ms)
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:38] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224824]: [success] (in 133 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:40] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224825]: [failed] (in 1 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("module 'db.bot.Users' has no attribute 'get_all_users'")>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 59, in cmd_start
+    await message.answer(Users.get_all_users())
+AttributeError: module 'db.bot.Users' has no attribute 'get_all_users'
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:41] in chat [private:548455968]
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("module 'db.bot.Users' has no attribute 'get_all_users'")>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 58, in cmd_start
+    await message.answer(users.get_all_users())
+AttributeError: module 'db.bot.Users' has no attribute 'get_all_users'
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:43] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224828]: [success] (in 183 ms)
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:45] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224829]: [success] (in 317 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:47] in chat [private:548455968]
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-81' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=ProgrammingError('Cursor closed')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\db\bot\Users.py", line 8, in get_all_users
+    return self._selectAll(sql='SELECT * FROM `users` WHERE 1')
+  File "E:\python\bot_template\db\model\model.py", line 29, in _selectAll
+    self.cur.execute(sql, args)
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 143, in execute
+    while self.nextset():
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 96, in nextset
+    return self._nextset(False)
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 83, in _nextset
+    conn = self._get_db()
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 65, in _get_db
+    raise err.ProgrammingError("Cursor closed")
+pymysql.err.ProgrammingError: Cursor closed
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:48] in chat [private:548455968]
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-84' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=ProgrammingError('Cursor closed')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\db\bot\Users.py", line 8, in get_all_users
+    return self._selectAll(sql='SELECT * FROM `users` WHERE 1')
+  File "E:\python\bot_template\db\model\model.py", line 29, in _selectAll
+    self.cur.execute(sql, args)
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 143, in execute
+    while self.nextset():
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 96, in nextset
+    return self._nextset(False)
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 83, in _nextset
+    conn = self._get_db()
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 65, in _get_db
+    raise err.ProgrammingError("Cursor closed")
+pymysql.err.ProgrammingError: Cursor closed
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:49] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224832]: [success] (in 284 ms)
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:51] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224833]: [success] (in 175 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:53] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224834]: [failed] (in 77 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-34' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:54] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224835]: [success] (in 141 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:56] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224836]: [failed] (in 77 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-43' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:57] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224837]: [failed] (in 75 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-115' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:58] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224838]: [failed] (in 80 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-119' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:59] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224839]: [success] (in 406 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:61] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224840]: [failed] (in 86 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:62] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224841]: [failed] (in 88 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:63] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224842]: [failed] (in 87 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-22' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:64] in chat [private:5731466639]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224843]: [success] (in 143 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:66] in chat [private:5731466639]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224844]: [failed] (in 88 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-33' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:67] in chat [private:5731466639]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224845]: [failed] (in 84 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-42' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:68] in chat [private:5731466639]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224846]: [failed] (in 84 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-46' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:69] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224847]: [failed] (in 83 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-51' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:70] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224848]: [success] (in 209 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:72] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224849]: [failed] (in 72 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:73] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224850]: [success] (in 169 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:75] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224851]: [success] (in 209 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:77] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224852]: [success] (in 162 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:79] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224853]: [success] (in 154 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:81] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224854]: [success] (in 174 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:83] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224855]: [success] (in 182 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:85] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224856]: [success] (in 155 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:87] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224857]: [success] (in 155 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:89] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224858]: [success] (in 159 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:91] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224859]: [success] (in 167 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:93] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224860]: [success] (in 228 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:95] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224861]: [success] (in 150 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:97] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224862]: [success] (in 167 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:99] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224863]: [success] (in 192 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:101] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224864]: [success] (in 158 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:103] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224865]: [success] (in 173 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:105] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224866]: [success] (in 191 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:107] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224867]: [success] (in 205 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:109] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224868]: [success] (in 179 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:111] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224869]: [success] (in 152 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:113] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224870]: [success] (in 150 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:115] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224871]: [success] (in 152 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:117] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224872]: [success] (in 165 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:119] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224873]: [success] (in 167 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:121] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224874]: [success] (in 222 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:123] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224875]: [success] (in 151 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:125] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224876]: [success] (in 202 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:127] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224877]: [success] (in 220 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:129] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224878]: [success] (in 155 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:131] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224879]: [success] (in 154 ms)
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:133] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224880]: [success] (in 276 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:135] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224881]: [failed] (in 75 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:136] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224882]: [failed] (in 70 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-41' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:137] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224883]: [success] (in 142 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:139] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224884]: [failed] (in 80 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:140] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224885]: [failed] (in 75 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:141] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224886]: [failed] (in 75 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users._connect())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:142] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224887]: [failed] (in 77 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users._connect())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:143] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224888]: [failed] (in 75 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users._connect())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:144] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224889]: [failed] (in 81 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users._connect())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:145] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224890]: [success] (in 350 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:147] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224891]: [success] (in 101 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:149] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224892]: [success] (in 133 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:151] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224893]: [success] (in 125 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:153] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224894]: [success] (in 115 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:155] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224895]: [success] (in 168 ms)
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:157] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224896]: [success] (in 175 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:159] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224897]: [success] (in 129 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:161] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224898]: [success] (in 104 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:163] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224899]: [success] (in 106 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:165] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224900]: [success] (in 119 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:167] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224901]: [success] (in 139 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:169] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224902]: [success] (in 103 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:171] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224903]: [success] (in 122 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:173] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224904]: [success] (in 119 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:175] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224905]: [success] (in 168 ms)
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:177] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224906]: [success] (in 177 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:179] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224907]: [failed] (in 78 ms)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\types\message.py", line 413, in answer
+    return await self.bot.send_message(
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:180] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224908]: [success] (in 167 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:182] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224909]: [success] (in 165 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:184] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224910]: [success] (in 172 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:186] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224911]: [success] (in 171 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:188] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224912]: [success] (in 203 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:190] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224913]: [success] (in 170 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:192] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224914]: [success] (in 197 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:194] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224915]: [success] (in 200 ms)
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:196] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224916]: [success] (in 154 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:198] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224917]: [success] (in 164 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:200] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224918]: [success] (in 156 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:202] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224919]: [success] (in 177 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:204] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224920]: [success] (in 171 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:206] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224921]: [success] (in 156 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:208] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224922]: [success] (in 186 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:210] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224923]: [success] (in 191 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:212] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224924]: [success] (in 157 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:214] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224925]: [success] (in 153 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:216] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:217] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224926]: [success] (in 261 ms)
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224927]: [success] (in 254 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:220] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224928]: [success] (in 181 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:222] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224929]: [success] (in 149 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:224] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224930]: [success] (in 167 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:226] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224931]: [success] (in 149 ms)
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:228] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224932]: [success] (in 160 ms)
+INFO:aiogram:Bot: Makarov_bot [@Makar4eg_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:230] in chat [private:548455968]
+INFO:aiogram.contrib.middlewares.logging:Process update [ID:531224933]: [success] (in 165 ms)
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:232] in chat [private:548455968]
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=ProgrammingError('Cursor closed')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\db\bot\Users.py", line 6, in get_all_users
+    return self._selectAll(sql='SELECT * FROM `users` WHERE 1')
+  File "E:\python\bot_template\db\model\model.py", line 33, in _selectAll
+    self.cur.execute(sql, args)
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 143, in execute
+    while self.nextset():
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 96, in nextset
+    return self._nextset(False)
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 83, in _nextset
+    conn = self._get_db()
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 65, in _get_db
+    raise err.ProgrammingError("Cursor closed")
+pymysql.err.ProgrammingError: Cursor closed
+INFO:aiogram.contrib.middlewares.logging:Received message [ID:233] in chat [private:548455968]
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=ProgrammingError('Cursor closed')>
+Traceback (most recent call last):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "E:\python\bot_template\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "E:/python/bot_template/bot/bot.py", line 62, in cmd_start
+    await message.answer(users.get_all_users())
+  File "E:\python\bot_template\db\bot\Users.py", line 6, in get_all_users
+    return self._selectAll(sql='SELECT * FROM `users` WHERE 1')
+  File "E:\python\bot_template\db\model\model.py", line 33, in _selectAll
+    self.cur.execute(sql, args)
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 143, in execute
+    while self.nextset():
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 96, in nextset
+    return self._nextset(False)
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 83, in _nextset
+    conn = self._get_db()
+  File "E:\python\bot_template\venv\lib\site-packages\pymysql\cursors.py", line 65, in _get_db
+    raise err.ProgrammingError("Cursor closed")
+pymysql.err.ProgrammingError: Cursor closed
